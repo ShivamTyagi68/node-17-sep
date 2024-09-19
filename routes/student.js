@@ -1,10 +1,10 @@
 const express = require('express')
-const studentcontroller = require('../controllers/studentcontroller');
+const studentcontroller = require('../controllers/studentcontroller')
 const router = express.Router();
   
 
 router.post('/add/user',(req,res)=>{
-     studentcontroler.addStudent(req,res);
+     studentcontroller.addStudent(req,res);
 })
 router.get('/users',(req,res)=>{
     studentcontroller.getStudents(req,res);
