@@ -2,7 +2,7 @@ const express = require('express');
 const connect = require('./connection');
 const student = require('./routes/student')
 const app = express()
-const Port = 3000
+const Port = 4000
 
 connect();
 app.use(express.json())
